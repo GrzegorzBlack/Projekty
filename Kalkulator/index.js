@@ -143,7 +143,6 @@ class Calculator {
 
   functionMemoryClear() {
     this.memory = 0;
-    //console.log("hey");
   }
 
   functionMemoryFrom() {
@@ -169,15 +168,11 @@ class Calculator {
 
   functionPercent(a, b) {
     if (a && b === null) {
-      console.log("hey");
       this.outcome = 0;
       this.functionDisplay(this.outcome);
     } else if (a && b) {
-      console.log(this.numberTwo);
       this.numberTwo = (a * b) / 100;
       this.outcome = (a * b) / 100;
-      // console.log(this.numberTwo);
-      // console.log(this.outcome);
       this.functionDisplay(this.outcome);
     }
   }
@@ -251,23 +246,15 @@ class Calculator {
 
   functionIsNumberOneString(a) {
     if (typeof this.numberOne === "string" && this.action === null) {
-      console.log("stringHey");
-      //console.log(this.numberOne);
       this.numberOne = this.numberOne + a;
-      console.log(this.numberOne);
-      //this.numberOne = parseFloat(this.numberOne);
-      //console.log(this.numberOne);
       this.outcome = this.numberOne;
-      //console.log(this.outcome);
       this.functionDisplay(this.numberOne);
     } else if (typeof this.numberTwo === "string" && this.action) {
       this.numberTwo = this.numberTwo + a;
-      //this.numberTwo = parseFloat(this.numberTwo);
       this.outcome = this.numberTwo;
       this.functionDisplay(this.numberTwo);
     } else {
       this.functionPush(a);
-      console.log("Push");
     }
   }
 
@@ -275,20 +262,17 @@ class Calculator {
     if (this.numberOne === null) {
       this.numberOne = a;
       this.outcome = this.numberOne;
-      //console.log(this.outcome);
+
       this.functionDisplay(this.numberOne);
     } else if (this.numberOne !== null && this.action === null) {
       if (!isNaN(this.numberOne)) {
-        //console.log(this.numberOne);
         this.numberOne = parseInt(`${this.numberOne}${a}`);
         this.outcome = this.numberOne;
         this.functionDisplay(this.numberOne);
-        //console.log(this.numberOne);
       } else {
         this.numberOne = parseInt(this.numberOne + a);
         this.outcome = this.numberOne;
         this.functionDisplay(this.numberOne);
-        console.log(this.outcome);
       }
     } else if (this.numberOne && this.numberTwo) {
       if (!isNaN(this.numberTwo)) {
@@ -300,39 +284,22 @@ class Calculator {
         this.outcome = this.numberTwo;
         this.functionDisplay(this.numberTwo);
       }
-      //console.log(this.numberTwo);
     } else {
       this.numberTwo = a;
       this.functionDisplay(this.numberTwo);
       this.outcome = this.numberTwo;
-      //console.log(this.numberTwo);
     }
-
-    //console.log(this.numberOne);
-    //console.log(this.numberTwo);
   }
-
-  // functionCheckIfNumberIsString(data) {
-  //   if(data === "string") {
-  //     this.outcome =
-  //   }
-  // }
 
   functionCheckIfExist(a) {
     if (this.action === null) {
       this.action = a;
-      console.log(a);
-      console.log(this.action);
     } else if (this.action && this.action === a && this.numberTwo) {
-      console.log(a);
-      console.log(this.action);
       this.whichAction(this.action);
     } else if (this.action && this.action !== a && this.numberTwo) {
-      // this.action = a;
       this.whichAction(this.action);
       this.action = a;
     } else if (this.action && this.action !== a && this.numberTwo === null) {
-      // this.action = a;
       this.action = a;
     }
     return;
@@ -341,17 +308,15 @@ class Calculator {
   whichAction(action) {
     if (action === "plus") {
       this.functionStringToNumber();
-      console.log("hed Add");
+
       this.functionPlus(this.numberOne, this.numberTwo);
       this.functionSecure();
     } else if (action === "minus") {
-      console.log("hey");
       this.functionMinus(this.numberOne, this.numberTwo);
       this.functionSecure();
     } else if (action === "multi") {
       this.functionMulti(this.numberOne, this.numberTwo);
       this.functionSecure();
-      //console.log(this.numberOne);
     } else if (action === "divide") {
       this.functionDivide(this.numberOne, this.numberTwo);
       this.functionSecure();
@@ -379,66 +344,47 @@ class Calculator {
   functionPlus(a, b) {
     this.outcome = a + b;
     this.functionDisplay(this.outcome);
-    console.log(this.outcome);
   }
 
   functionMinus(a, b) {
     this.outcome = a - b;
     this.functionDisplay(this.outcome);
-    console.log(this.outcome);
   }
 
   functionMulti(a, b) {
     this.outcome = a * b;
     this.functionDisplay(this.outcome);
-    console.log(this.outcome);
   }
   functionDivide(a, b) {
     this.outcome = a / b;
     this.functionDisplay(this.outcome);
-    console.log(this.outcome);
   }
 
   // Funkcja która po naciśnięciu " = " zapamiętuje wynik
   functionSecure() {
     this.numberOne = this.outcome;
     this.numberTwo = null;
-    //console.log(this.numberOne);
-    //console.log(this.outcome);
-    //this.action = null;
   }
 
   functionReverse() {
-    //console.log(this.numberOne);
-    //console.log(this.numberTwo);
     if (this.numberOne && this.numberTwo === null) {
-      console.log("hey");
       this.numberOne = this.numberOne * -1;
       this.outcome = this.numberOne;
-      console.log(this.numberOne);
-      console.log(this.numberTwo);
       this.functionDisplay(this.outcome);
-      console.log(this.outcome);
     } else {
       this.numberTwo = this.numberTwo * -1;
       this.outcome = this.numberTwo;
       this.functionDisplay(this.outcome);
-      console.log(this.numberOne);
-      console.log(this.numberTwo);
     }
   }
 
   functionAddDot() {
     if (this.numberOne && this.numberTwo === null) {
       this.numberOne = this.numberOne + ".";
-      console.log(this.numberOne);
-      //this.numberOne = parseFloat(this.numberOne);
       this.outcome = this.numberOne;
       this.functionDisplay(this.outcome);
     } else if (this.numberOne && this.numberTwo) {
       this.numberTwo = this.numberTwo + ".";
-      console.log(this.numberOne);
-      //this.numberOne = parseFloat(this.numberOne);
       this.outcome = this.numberTwo;
       this.functionDisplay(this.numberTwo);
     }
