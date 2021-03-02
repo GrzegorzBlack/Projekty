@@ -1,2 +1,2 @@
 # Projekty
-Różne projekty
+Różne projekty html, css i js.
