@@ -1,1 +1,1 @@
-Projekt kalkulatora z wykorzystaniem html, css i js.  Tomek to gej !!!
+Projekt kalkulatora z wykorzystaniem html, css i js.
