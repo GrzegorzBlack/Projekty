@@ -1,0 +1,445 @@
+.navbar{
+  display: flex;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: orange;
+}
+
+.header{
+  display: flex;
+  margin-right: 200px;
+
+}
+
+.header_buttons_wrapper{
+  display: flex;
+  width: 800px;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.logo_wrapper{
+  margin-right: 80px;;
+}
+
+
+.section{
+  display: flex;
+  width: 400px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.section_div{
+display: flex;
+justify-content: flex-end;
+}
+
+.header_button{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  background-color: inherit;
+}
+
+.header_button:hover{
+  border: 2px solid black;
+}
+
+
+.header_cart_icon{
+  width: 80px;
+  height: 50px;
+}
+
+.dropdown_user{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown_user_logout{
+  text-align: center;
+}
+
+ /* Main page */
+
+.mainPage{
+  display: flex;
+  justify-content: center;
+}
+
+.mainPage_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1200px;
+  height: 800px;
+}
+
+.welcome_wrapper{
+  display: flex;
+  justify-content: center;
+  height:200px;
+
+}
+.mainPage_h1_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.or_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 160px;
+}
+
+.options_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 600px;
+  width: auto;
+}
+
+.options_wrapper div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border: 2px solid orange;
+}
+
+.options_wrapper button {
+  height: 40px;
+  width: 80px;
+}
+
+
+.snacksPage{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.snacksPage_wrapper{
+  display: flex;
+  flex-basis: 600px;
+  padding: 10px;
+  border: 2px solid orange;
+}
+
+.products_descritpion{
+  display: flex;
+  width: 1010px;
+  height: 40px;
+  justify-content: space-between;
+  margin: 12px;
+  background-color: palegreen;
+}
+
+.products_descritpion div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+.productsWrapper{
+  display: flex;
+  width: 1010px;
+  justify-content: space-between;
+  border: 2px solid green;
+  background-color: palegreen;
+}
+
+.productsWrapper p{
+  flex-basis: 200px;
+  text-align: center;
+}
+
+.productsWrapper div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 200px;
+}
+
+
+.buyButton{
+  width: 40%;
+  height: 80%;
+}
+
+.cartPage{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.mainWrapper{
+  width: 1010px;
+  height: auto;
+}
+
+.cartProducts_Wrapper{
+  height: auto;
+  background-color: rgb(175, 60, 60);
+}
+
+.cart_header {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_header div{
+  text-align: center;
+  flex-basis: 200px;
+}
+
+
+.total_value_wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total_value{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.final_buy_wrapper{
+  margin-top: 50px;
+}
+.final_buy_button_div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.final_buy_button_div button{
+  width: 120px;
+  height: 40px;
+}
+
+
+/* Admin css */
+
+.actionButtonsWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.actionButtonsWrapper button {
+  width: 60px;
+  height: 30px;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+.actionButtonsWrapper button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  font-size: 1rem;
+}
+
+.adminPage{
+  display: flex;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  background-color: green;
+}
+
+.admin_products_wrapper{
+  display: flex;
+  flex-basis: auto;
+  padding: 10px;
+}
+
+
+.admin_form{
+  display: flex;
+  flex-basis: 600px;
+  padding: 10px;
+  border: 2px solid orange;
+}
+
+.adminProductsWrapper{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  
+  border: 2px solid green;
+  background-color: palegreen;
+}
+
+
+
+/* Admin pop up */
+
+
+
+.popup_header{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+
+.popup_body{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+
+
+
+.popup_div{
+  background: white;
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  padding: 15px;
+  border: 2px solid orange;
+}
+
+.popup_div p{
+  text-align: center;
+}
+
+.popup_div button{
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  border: 2px solid blue;
+  transition: all 0.15s;
+}
+
+.popup_div button:hover{
+  background-color: orange;
+  
+  
+}
+
+
+.popup_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+/* Strona logowania */
+
+.login_page{
+  display: flex;
+  justify-content: center;
+ 
+  width: 1900px;
+  height: 100%;
+}
+
+.login_form_wrapper{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px solid orange;
+
+}
+
+.login_form input{
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.login_form button{
+  width: 60px;
+  height: 40px;
+  margin: 10px;
+}
+
+.login_form_div {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login_form_div a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.login_form_div a:hover { 
+  color: red;
+}
+
+.login_form_Link {
+ align-self: center;
+}
+
+
+/* Admin button, logout */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+.dropdown_content{
+  width: 100px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  width: 100px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
